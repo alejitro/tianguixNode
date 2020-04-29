@@ -10,6 +10,7 @@ module.exports.createOrder= function(instrument,order_type,quantity, unit_value,
             if(err){
                 throw err;
             }
+            console.log(result);
             success(result);
         });      
 }
