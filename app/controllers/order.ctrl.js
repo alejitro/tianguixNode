@@ -15,4 +15,10 @@ routr.post('/orders',function (req,res){
     });
 })
 
+routr.get('/orders',function (req,res){
+    
+    orderServices.readOrders(function(orders){
+            res.status(200).send(orders);
+    });
+})
 module.exports = routr;

@@ -19,12 +19,15 @@ var dbParams;
 } else {
     dbParams = conf.get('db');
 }*/
+console.log(process.env.HOST);
+console.log(process.env.USER);
+
 
 function connectDB(){
     if(!connection){
         connection = mysql.createConnection({
             host: process.env.HOST,
-            user: process.env.USER,
+            user: process.env.USER_DB,
             password: process.env.PASSWORD_DB,
             database: process.env.DATABASE,
             timeoutBeforeReconnection: process.env.timeoutBeforeReconnection

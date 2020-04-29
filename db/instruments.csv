@@ -1,0 +1,2 @@
+[{"id":1, "name":"Bancolombia", "description":"Bancolombia", "opening_price":24000, "closing_price":26000, "instrument_type":1},
+ {"id":2, "name":"Ecopetrol", "description":"Petroleos", "opening_price":1500, "closing_price":2000, "instrument_type":1}]
